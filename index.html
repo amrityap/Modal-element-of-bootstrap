@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Custom Modal</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<button id="button1"> Button</button>
+
+<div class="popup">
+	<div class="popup-content">
+		<div class="closingdiv">
+	<span class="closing">&times</span>
+	</div>
+	<p>SomeText in modal</p>
+</div>
+</div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <script src="index.js"></script>
+    
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+           $(".popup").hide();
+           
+          $("#button1").click(() => {
+          	
+          	$(".popup").show();
+          })
+
+          $(".closing").click(() =>{
+          	$(".popup").hide();
+          })
+          $(".popup").click(function(){
+          	 $(this).hide();
+          })          
+        $('.popup > .popup-content').click(function(e){
+        e.stopPropagation();
+          }
+           );
+           
+
+
+        })// end document ready function
+
+
+    </script>
+</body>
+
+</html>

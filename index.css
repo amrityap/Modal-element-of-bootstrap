@@ -1,0 +1,53 @@
+#button1{
+width: 10em;
+border-style: solid;
+border-color: #adadeb;
+background-color: #adadeb;
+border-radius: 10%;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+#button1:hover{
+border-color: #4646d2;
+background-color: #4646d2;
+}
+.popup{
+ display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    
+    background-color: rgba(0,0,0,0.4); 
+ }
+ .popup-content{
+ 	background-color: #fefefe;
+    margin: 12em auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+
+ }
+ .closingdiv{
+display: flex;
+ 	flex-direction: row-reverse;
+ 	
+ 	 }
+ .closing{
+ 	
+ 	color: #aaaaaa;
+ 	font-size: 28px;
+    font-weight: bold;
+
+    padding: auto;
+  
+ }
+ .closing:hover{
+ 	color: black;
+ 	cursor: pointer;
+ }
+
